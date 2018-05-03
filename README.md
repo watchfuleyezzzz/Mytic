@@ -25,5 +25,11 @@
 * A whole lot more!
 ------------
 
+### Libraries:
+https://benchmarkdotnet.org
+https://bunifuframework.com
+http://www.cpuid-pro.com/products-system-monitoring-kit.php
+https://lvcharts.net
+
 ### Website:
 ------------
