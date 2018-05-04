@@ -67,6 +67,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -84,9 +85,12 @@
   <ItemGroup>
     <Folder Include="Forms\" />
     <Folder Include="Functions\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\HDD_96px.png" />
+    <None Include="Resources\Broom_96px.png" />
+    <None Include="Resources\Burn CD_96px.png" />
+    <None Include="Resources\Temperature_96px.png" />
     <Content Include="UI\Bunifu_UI_v1.5.3.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
