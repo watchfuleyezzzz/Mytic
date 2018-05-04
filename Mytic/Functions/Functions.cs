@@ -9,7 +9,7 @@ namespace Mytic.Functions
 {
     class Functions
     {
-        public void AddDrag(Control Control) { Control.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DragForm_MouseDown); }
+        public void AddDrag(Control Control) { Control.MouseDown += new System.Windows.Forms.MouseEventHandler(DragForm_MouseDown); }
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
