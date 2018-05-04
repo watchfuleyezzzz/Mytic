@@ -1,2 +1,5 @@
 language: csharp
 solution: Mytic.sln
+
+notifications:
+  email: false
