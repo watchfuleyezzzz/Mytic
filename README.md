@@ -1,6 +1,8 @@
 # Mytic: All tools you might ever need!
 
 ### Current version: Kiwi
+[![Build Status](https://travis-ci.org/TheGreyRaven/Mytic.svg?branch=master)](https://travis-ci.org/TheGreyRaven/Mytic)
+
 ------------
 
 ### Bugs:
