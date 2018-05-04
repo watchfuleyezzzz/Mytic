@@ -1,2 +1,7 @@
 language: csharp
 solution: Mytic.sln
+
+install:
+- Mytic.sln
+script:
+- xbuild Mytic.sln
