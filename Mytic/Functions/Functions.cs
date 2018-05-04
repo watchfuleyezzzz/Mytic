@@ -15,9 +15,9 @@ namespace Mytic.Functions
 
         public FormWindowState WindowState { get; private set; }
 
-        [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
         private void DragForm_MouseDown(object sender, MouseEventArgs e)
@@ -25,9 +25,7 @@ namespace Mytic.Functions
             if (e.Button == MouseButtons.Left)
             {
                 ReleaseCapture();
-                SendMessage(MainForm.ActiveForm.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-                // Checks if Y = 0, if so maximize the form
-                if (MainForm.ActiveForm.Location.Y == 0) { this.WindowState = FormWindowState.Maximized; }
+                SendMessage(Form.ActiveForm.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
     }

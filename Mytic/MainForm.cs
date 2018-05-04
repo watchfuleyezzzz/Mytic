@@ -13,6 +13,5 @@ namespace Mytic
             InitializeComponent();
             Functions.AddDrag(TopPanel);
         }
-     
     }
 }
