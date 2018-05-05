@@ -1,14 +1,22 @@
 ﻿using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Mytic
 {
     public partial class MainForm : Form
     {
-        Functions.Functions Functions = new Functions.Functions();
+        Functions.Add Add = new Functions.Add();
+        Functions.Network Network = new Functions.Network();
+
         public MainForm()
         {
             InitializeComponent();
-            Functions.AddDrag(TopPanel);
+            Add.Drag(TopPanel);
+        }
+
+        private void VersionLabel_Click(object sender, System.EventArgs e)
+        {
+            Network.OpenURL("https://github.com/TheGreyRaven/Mytic");
         }
     }
 }

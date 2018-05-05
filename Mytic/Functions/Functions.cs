@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Mytic.Functions
 {
-    class Functions
+    class Add
     {
-        public void AddDrag(Control Control) { Control.MouseDown += new System.Windows.Forms.MouseEventHandler(DragForm_MouseDown); }
+        public void Drag(Control Control) { Control.MouseDown += new System.Windows.Forms.MouseEventHandler(DragForm_MouseDown); }
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -23,6 +24,15 @@ namespace Mytic.Functions
                 ReleaseCapture();
                 SendMessage(Form.ActiveForm.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
+    }
+
+    class Network
+    {
+        public void OpenURL(String URL)
+        {
+            Process.Start(URL);
+            return;
         }
     }
 }
