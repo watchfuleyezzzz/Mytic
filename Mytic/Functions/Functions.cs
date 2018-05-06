@@ -3,11 +3,9 @@ using System.Windows.Forms;
 
 namespace Mytic.Functions
 {
-
-    class Add
+    class FormModify
     {
-        public void Drag(Control Control) { Control.MouseDown += new System.Windows.Forms.MouseEventHandler(DragForm_MouseDown); }
-
+        public void EnableDrag(Control Control) { Control.MouseDown += new System.Windows.Forms.MouseEventHandler(DragForm_MouseDown); }
         public FormWindowState WindowState { get; private set; }
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]

@@ -4,13 +4,13 @@ namespace Mytic
 {
     public partial class MainForm : Form
     {
-        Functions.Add Add = new Functions.Add();
+        Functions.FormModify Form = new Functions.FormModify();
         Functions.Network Network = new Functions.Network();
 
         public MainForm()
         {
             InitializeComponent();
-            Add.Drag(TopPanel);
+            Form.EnableDrag(TopPanel);
         }
 
         private void LogoButton_Click(object sender, System.EventArgs e)

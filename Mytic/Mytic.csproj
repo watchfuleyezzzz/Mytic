@@ -57,7 +57,6 @@
     <Compile Include="Forms\SystemInfo.Designer.cs">
       <DependentUpon>SystemInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Functions\FormModify.cs" />
     <Compile Include="Functions\Functions.cs" />
     <Compile Include="Functions\Network.cs" />
     <Compile Include="MainForm.cs">
