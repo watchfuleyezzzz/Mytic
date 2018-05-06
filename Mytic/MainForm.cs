@@ -17,5 +17,11 @@ namespace Mytic
         {
             Network.OpenURL("https://github.com/TheGreyRaven/Mytic");
         }
+
+        private void SysInfoButton_Click(object sender, System.EventArgs e)
+        {
+            if (LogoButton.Visible && LogoPanel.Visible && MarkerPanel.Visible && LogoLabel.Visible)
+            LogoButton.Hide(); LogoPanel.Hide(); MarkerPanel.Show(); LogoLabel.Hide();
+        }
     }
 }
