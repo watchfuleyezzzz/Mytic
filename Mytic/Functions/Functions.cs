@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Diagnostics;
 
 namespace Mytic.Functions
 {
+
     class Add
     {
         public void Drag(Control Control) { Control.MouseDown += new System.Windows.Forms.MouseEventHandler(DragForm_MouseDown); }
@@ -22,15 +22,6 @@ namespace Mytic.Functions
                 ReleaseCapture();
                 SendMessage(Form.ActiveForm.Handle, 0xA1, 0x2, 0);
             }
-        }
-    }
-
-    class Network
-    {
-        public void OpenURL(String URL)
-        {
-            Process.Start(URL);
-            return;
         }
     }
 }

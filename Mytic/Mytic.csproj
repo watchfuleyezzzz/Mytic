@@ -51,7 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Functions\FormModify.cs" />
     <Compile Include="Functions\Functions.cs" />
+    <Compile Include="Functions\Network.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Panel MarkerPanel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.MenuPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.TopPanel = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.LogoButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.TopPanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.LogoButton = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            MarkerPanel = new System.Windows.Forms.Panel();
             this.MenuPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoButton)).BeginInit();
@@ -49,7 +50,7 @@
             // 
             this.MenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(39)))), ((int)(((byte)(41)))));
             this.MenuPanel.Controls.Add(this.bunifuFlatButton5);
-            this.MenuPanel.Controls.Add(this.panel1);
+            this.MenuPanel.Controls.Add(MarkerPanel);
             this.MenuPanel.Controls.Add(this.bunifuFlatButton4);
             this.MenuPanel.Controls.Add(this.bunifuFlatButton3);
             this.MenuPanel.Controls.Add(this.bunifuFlatButton2);
@@ -59,57 +60,6 @@
             this.MenuPanel.Name = "MenuPanel";
             this.MenuPanel.Size = new System.Drawing.Size(180, 450);
             this.MenuPanel.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.panel1.Location = new System.Drawing.Point(0, 41);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 48);
-            this.panel1.TabIndex = 1;
-            // 
-            // TopPanel
-            // 
-            this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TopPanel.Location = new System.Drawing.Point(180, 0);
-            this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(620, 10);
-            this.TopPanel.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.panel2.Controls.Add(this.LogoButton);
-            this.panel2.Location = new System.Drawing.Point(228, 10);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(108, 113);
-            this.panel2.TabIndex = 2;
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(314, 149);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(353, 128);
-            this.bunifuCustomLabel1.TabIndex = 3;
-            this.bunifuCustomLabel1.Text = "MYTIC";
-            // 
-            // LogoButton
-            // 
-            this.LogoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.LogoButton.Image = ((System.Drawing.Image)(resources.GetObject("LogoButton.Image")));
-            this.LogoButton.ImageActive = null;
-            this.LogoButton.Location = new System.Drawing.Point(5, 4);
-            this.LogoButton.Name = "LogoButton";
-            this.LogoButton.Size = new System.Drawing.Size(98, 104);
-            this.LogoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoButton.TabIndex = 0;
-            this.LogoButton.TabStop = false;
-            this.LogoButton.Zoom = 5;
-            this.LogoButton.Click += new System.EventHandler(this.LogoButton_Click);
             // 
             // bunifuFlatButton5
             // 
@@ -144,6 +94,14 @@
             this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton5.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // MarkerPanel
+            // 
+            MarkerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            MarkerPanel.Location = new System.Drawing.Point(0, 41);
+            MarkerPanel.Name = "MarkerPanel";
+            MarkerPanel.Size = new System.Drawing.Size(5, 48);
+            MarkerPanel.TabIndex = 1;
             // 
             // bunifuFlatButton4
             // 
@@ -281,6 +239,49 @@
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // TopPanel
+            // 
+            this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopPanel.Location = new System.Drawing.Point(180, 0);
+            this.TopPanel.Name = "TopPanel";
+            this.TopPanel.Size = new System.Drawing.Size(620, 10);
+            this.TopPanel.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            this.panel2.Controls.Add(this.LogoButton);
+            this.panel2.Location = new System.Drawing.Point(228, 10);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(108, 113);
+            this.panel2.TabIndex = 2;
+            // 
+            // LogoButton
+            // 
+            this.LogoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            this.LogoButton.Image = ((System.Drawing.Image)(resources.GetObject("LogoButton.Image")));
+            this.LogoButton.ImageActive = null;
+            this.LogoButton.Location = new System.Drawing.Point(5, 4);
+            this.LogoButton.Name = "LogoButton";
+            this.LogoButton.Size = new System.Drawing.Size(98, 104);
+            this.LogoButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoButton.TabIndex = 0;
+            this.LogoButton.TabStop = false;
+            this.LogoButton.Zoom = 5;
+            this.LogoButton.Click += new System.EventHandler(this.LogoButton_Click);
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(314, 149);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(353, 128);
+            this.bunifuCustomLabel1.TabIndex = 3;
+            this.bunifuCustomLabel1.Text = "MYTIC";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,7 +307,6 @@
         #endregion
 
         private System.Windows.Forms.Panel MenuPanel;
-        private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
