@@ -13,9 +13,9 @@
 ------------
 
 ### In development:
-* Abillity to format USB to: FAT/FAT32/NTFS/UDF/exFAT/ReFS.
+* Abillity to format USB to: FAT/FAT32/NTFS and more formats.
 * Abillity to create BIOS or UEFI bootable drives.
-* Abillity to create bootable drives from bootable ISOs, disk images , including compressed ones.
+* Abillity to create bootable drives from bootable ISOs, disk images, including compressed ones.
 * Abillity to verify checksums.
 * A modern and easy to use UI.
 * Abillity to perform bad blocks checks, including detection of "fake" flash drives.
