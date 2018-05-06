@@ -14,7 +14,7 @@ namespace Mytic
             Add.Drag(TopPanel);
         }
 
-        private void VersionLabel_Click(object sender, System.EventArgs e)
+        private void LogoButton_Click(object sender, System.EventArgs e)
         {
             Network.OpenURL("https://github.com/TheGreyRaven/Mytic");
         }

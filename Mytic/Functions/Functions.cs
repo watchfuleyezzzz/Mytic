@@ -7,8 +7,6 @@ namespace Mytic.Functions
     class Add
     {
         public void Drag(Control Control) { Control.MouseDown += new System.Windows.Forms.MouseEventHandler(DragForm_MouseDown); }
-        public const int WM_NCLBUTTONDOWN = 0xA1;
-        public const int HT_CAPTION = 0x2;
 
         public FormWindowState WindowState { get; private set; }
 
@@ -22,7 +20,7 @@ namespace Mytic.Functions
             if (e.Button == MouseButtons.Left)
             {
                 ReleaseCapture();
-                SendMessage(Form.ActiveForm.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+                SendMessage(Form.ActiveForm.Handle, 0xA1, 0x2, 0);
             }
         }
     }

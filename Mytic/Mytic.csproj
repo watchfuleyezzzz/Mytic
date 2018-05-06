@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic" />
@@ -87,6 +90,10 @@
     <Folder Include="Forms\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Logo.ico" />
+    <None Include="Resources\Logo.ico" />
+    <None Include="Resources\Logo.png" />
+    <None Include="Resources\System Information_96px.png" />
     <None Include="Resources\HDD_96px.png" />
     <None Include="Resources\Broom_96px.png" />
     <None Include="Resources\Burn CD_96px.png" />
