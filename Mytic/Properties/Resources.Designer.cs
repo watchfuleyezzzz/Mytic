@@ -83,6 +83,16 @@ namespace Mytic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Drive_HDD_USB_White_icon {
+            get {
+                object obj = ResourceManager.GetObject("Drive_HDD_USB_White_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HDD_96px {
             get {
                 object obj = ResourceManager.GetObject("HDD_96px", resourceCulture);

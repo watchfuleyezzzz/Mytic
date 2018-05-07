@@ -124,6 +124,9 @@
   <data name="Burn_CD_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Burn CD_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Drive_HDD_USB_White_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Drive-HDD-USB-White-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="HDD_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HDD_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

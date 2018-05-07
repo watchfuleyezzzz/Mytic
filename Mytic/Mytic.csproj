@@ -99,6 +99,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Logo.ico" />
+    <None Include="Resources\Drive-HDD-USB-White-icon.png" />
     <None Include="Resources\Logo.ico" />
     <None Include="Resources\Logo.png" />
     <None Include="Resources\System Information_96px.png" />
