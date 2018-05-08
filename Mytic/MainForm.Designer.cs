@@ -40,6 +40,7 @@
             this.LogoPanel = new System.Windows.Forms.Panel();
             this.LogoButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.LogoLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.MenuPanel.SuspendLayout();
             this.LogoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoButton)).BeginInit();
@@ -287,14 +288,23 @@
             this.LogoLabel.TabIndex = 3;
             this.LogoLabel.Text = "MYTIC";
             // 
+            // MainPanel
+            // 
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPanel.Location = new System.Drawing.Point(180, 10);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(620, 440);
+            this.MainPanel.TabIndex = 4;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.LogoLabel);
             this.Controls.Add(this.LogoPanel);
+            this.Controls.Add(this.LogoLabel);
+            this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.MenuPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -322,6 +332,7 @@
         private Bunifu.Framework.UI.BunifuImageButton LogoButton;
         private Bunifu.Framework.UI.BunifuCustomLabel LogoLabel;
         private System.Windows.Forms.Panel MarkerPanel;
+        private System.Windows.Forms.Panel MainPanel;
     }
 }
 

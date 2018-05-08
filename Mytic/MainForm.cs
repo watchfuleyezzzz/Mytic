@@ -7,6 +7,8 @@ namespace Mytic
         Functions.FormModify Form = new Functions.FormModify();
         Functions.Network Network = new Functions.Network();
 
+        Forms.SystemInfo SysInfo = new Forms.SystemInfo();
+
         public MainForm()
         {
             InitializeComponent();
@@ -21,6 +23,9 @@ namespace Mytic
         private void SysUtilButton_Click(object sender, System.EventArgs e)
         { MarkerPanel.Top = SysUtilButton.Top; HideSarter();
             if (!MarkerPanel.Visible){
+                MainPanel.Controls.Clear();
+                SysInfo.Dock = DockStyle.Fill;
+                MainPanel.Controls.Add(SysInfo);
                 MarkerPanel.Show();
             }
         }
@@ -28,6 +33,8 @@ namespace Mytic
         private void TempButton_Click(object sender, System.EventArgs e)
         { MarkerPanel.Top = TempUtilButton.Top; HideSarter();
             if (!MarkerPanel.Visible){
+                MainPanel.Controls.Clear();
+                SysInfo.Dispose();
                 MarkerPanel.Show();
             }
         }
@@ -35,6 +42,7 @@ namespace Mytic
         private void DiskUtilButton_Click(object sender, System.EventArgs e)
         { MarkerPanel.Top = DiskUtilButton.Top; HideSarter();
             if (!MarkerPanel.Visible){
+                MainPanel.Controls.Clear();
                 MarkerPanel.Show();
             }
         }
@@ -42,6 +50,7 @@ namespace Mytic
         private void CleanUtilButton_Click(object sender, System.EventArgs e)
         { MarkerPanel.Top = CleanUtilButton.Top; HideSarter();
             if (!MarkerPanel.Visible) {
+                MainPanel.Controls.Clear();
                 MarkerPanel.Show();
             }
         }
@@ -49,6 +58,7 @@ namespace Mytic
         private void ISOUitlButton_Click(object sender, System.EventArgs e)
         { MarkerPanel.Top = ISOUitlButton.Top; HideSarter();
             if (!MarkerPanel.Visible){
+                MainPanel.Controls.Clear();
                 MarkerPanel.Show();
             }
         }
